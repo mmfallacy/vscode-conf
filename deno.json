@@ -1,6 +1,7 @@
 {
     "tasks": {
-        "dev": "deno run --allow-read --watch main.ts"
+        "dev": "deno run --allow-read --watch main.ts",
+        "build": "deno run --allow-write --allow-read scripts/build.ts"
     },
     "imports": {
         "path": "jsr:@std/path"
