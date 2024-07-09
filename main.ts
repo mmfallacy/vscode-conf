@@ -3,13 +3,14 @@ import Font from "./config/font.ts";
 import Files from "./config/files/mod.ts";
 import UI from "./config/ui.ts";
 
-const Settings = {
+import Custom from "./config/keybinds/custom.ts";
+import Neovim from "./config/keybinds/neovim.ts";
+
+export const Settings = {
   ...APC,
   ...Font,
   ...Files,
   ...UI,
 };
 
-console.log(Settings);
-
-export default Settings;
+export const Keybinds = [...Custom, ...Neovim];
