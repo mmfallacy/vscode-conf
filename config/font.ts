@@ -1,4 +1,4 @@
-export default {
+export const Font = {
   // Set the font families to Geist Mono
   "editor.fontFamily": "Geist Mono",
   "scm.inputFontFamily": "Geist Mono",

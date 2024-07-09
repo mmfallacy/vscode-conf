@@ -1,6 +1,6 @@
 import * as path from "path";
 
-import Exclusions from "./exclusions.ts";
+import { Exclusions } from "./exclusions.ts";
 
 const Files: Record<string, unknown> = {
   "files.exclude": Exclusions,
@@ -20,4 +20,4 @@ for await (const dirEntry of Deno.readDir(__dirname)) {
 
   Files[filename] = module.default;
 }
-export default Files;
+export { Files };

@@ -1,4 +1,4 @@
-export default {
+export const UI = {
   // Set base color and icon theme
   "workbench.colorTheme": "Aura Dark",
   "workbench.iconTheme": "moxer-icons",

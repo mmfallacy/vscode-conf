@@ -1,4 +1,4 @@
-export default [
+export const Custom = [
   {
     key: "space",
     command: "whichkey.show",

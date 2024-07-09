@@ -1,4 +1,4 @@
-export default {
+export const Exclusions = {
   "**/.git": true,
   "**/.svn": true,
   "**/.hg": true,

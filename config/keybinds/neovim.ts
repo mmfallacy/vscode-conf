@@ -1,4 +1,4 @@
-export default [
+export const Neovim = [
   {
     command: "vscode-neovim.compositeEscape1",
     key: "j",

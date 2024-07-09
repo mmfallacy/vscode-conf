@@ -31,4 +31,4 @@ APC.stylesheet = {
   ".split-view-view .visible": "background-color: #110f17 !important",
 };
 
-export default APC;
+export { APC };
