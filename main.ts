@@ -1,8 +1,15 @@
-export function add(a: number, b: number): number {
-  return a + b;
-}
+import APC from "./config/apc.ts";
+import Font from "./config/font.ts";
+import Files from "./config/files/mod.ts";
+import UI from "./config/ui.ts";
 
-// Learn more at https://deno.land/manual/examples/module_metadata#concepts
-if (import.meta.main) {
-  console.log("Add 2 + 3 =", add(2, 3));
-}
+const Settings = {
+  ...APC,
+  ...Font,
+  ...Files,
+  ...UI,
+};
+
+console.log(Settings);
+
+export default Settings;
