@@ -13,7 +13,7 @@ import { Terminal } from "./terminal.ts";
 import { UI } from "./ui.ts";
 import { Window } from "./window.ts";
 
-export const WhichKey = [
+const Entries = [
   ...Bookmark,
   ...Buffers,
   ...Debug,
@@ -29,3 +29,9 @@ export const WhichKey = [
   ...UI,
   ...Window,
 ];
+
+export const WhichKey = {
+  "whichkey.sortOrder": "alphabetically",
+  "whichkey.delay": 0,
+  "whichkey.bindings": Entries,
+};
