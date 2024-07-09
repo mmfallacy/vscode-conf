@@ -4,6 +4,7 @@
         "build": "deno run --allow-write --allow-read scripts/build.ts"
     },
     "imports": {
-        "path": "jsr:@std/path"
+        "path": "jsr:@std/path",
+        "dotenv": "jsr:@std/dotenv"
     }
 }

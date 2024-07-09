@@ -3,11 +3,15 @@
   "packages": {
     "specifiers": {
       "jsr:@std/assert@^0.226.0": "jsr:@std/assert@0.226.0",
+      "jsr:@std/dotenv": "jsr:@std/dotenv@0.224.2",
       "jsr:@std/path": "jsr:@std/path@0.225.2"
     },
     "jsr": {
       "@std/assert@0.226.0": {
         "integrity": "0dfb5f7c7723c18cec118e080fec76ce15b4c31154b15ad2bd74822603ef75b3"
+      },
+      "@std/dotenv@0.224.2": {
+        "integrity": "29081695357e4534696c9e986b2560be29c141ccf52daa32b6c20ff5b5c64ab9"
       },
       "@std/path@0.225.2": {
         "integrity": "0f2db41d36b50ef048dcb0399aac720a5348638dd3cb5bf80685bf2a745aa506",
@@ -20,6 +24,7 @@
   "remote": {},
   "workspace": {
     "dependencies": [
+      "jsr:@std/dotenv",
       "jsr:@std/path"
     ]
   }
