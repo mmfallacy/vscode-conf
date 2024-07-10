@@ -3,7 +3,8 @@
         "dev": "deno run --allow-read --watch main.ts",
         "build": "deno run --allow-write --allow-read scripts/build.ts",
         "stow": "deno run --allow-write --allow-read --allow-env scripts/stow.ts",
-        "inject": "deno run --allow-write --allow-read --allow-env scripts/inject.ts"
+        "inject": "deno run --allow-write --allow-read --allow-env scripts/inject.ts",
+        "install-ext": "deno run --allow-run --allow-read --allow-env scripts/install-ext.ts"
     },
     "imports": {
         "path": "jsr:@std/path",
