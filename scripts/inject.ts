@@ -13,6 +13,7 @@ try {
     path.join(BUILD_DIRECTORY, "keybindings.json"),
     path.join(TARGET, "keybindings.json")
   );
+  console.log(`Successfully injected to ${TARGET}`);
 } catch (err) {
   console.error(err);
 }

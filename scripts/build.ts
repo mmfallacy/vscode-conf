@@ -17,6 +17,7 @@ try {
     JSON.stringify(Keybinds),
     { create: true }
   );
+  console.log(`settings.json and keybindings.json built successfully!`);
 } catch (err) {
   console.error(err);
 }
