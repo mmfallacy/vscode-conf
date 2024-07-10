@@ -9,7 +9,7 @@ export const UI = {
   "editor.scrollbar.vertical": "auto",
   "editor.scrollbar.horizontal": "auto",
   // Tweaks
-  "workbench.sidebar.location": "right",
+  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "explorer.compactFolders": false,
   "window.zoomLevel": 0.75,
