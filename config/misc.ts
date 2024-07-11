@@ -3,4 +3,5 @@ export const Misc = {
   "editor.tabSize": 2,
   "editor.linkedEditing": true,
   "breadcrumbs.filePath": "off",
+  "terminal.integrated.commandsToSkipShell": ["whichkey.show"],
 };
