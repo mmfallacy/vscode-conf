@@ -5,12 +5,6 @@ export const Buffers = [
     type: "bindings",
     bindings: [
       {
-        key: "b",
-        name: "Show all buffers/editors",
-        type: "command",
-        command: "workbench.action.showAllEditors",
-      },
-      {
         key: "d",
         name: "Close active editor",
         type: "command",

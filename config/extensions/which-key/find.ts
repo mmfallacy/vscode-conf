@@ -1,11 +1,11 @@
-export const Search = [
+export const Find = [
   {
-    key: "s",
-    name: "Search...",
+    key: "f",
+    name: "Find...",
     type: "bindings",
     bindings: [
       {
-        key: "f",
+        key: "p",
         name: "Files",
         type: "command",
         command: "workbench.action.quickOpen",
@@ -16,31 +16,18 @@ export const Search = [
         type: "command",
         command: "workbench.action.findInFiles",
       },
-    ],
-  },
-  {
-    key: "f",
-    name: "Find & Replace...",
-    type: "bindings",
-    bindings: [
       {
-        key: "f",
-        name: "File",
+        key: "b",
+        name: "Show all buffers/editors",
         type: "command",
-        command: "editor.action.startFindReplaceAction",
+        command: "workbench.action.showAllEditors",
       },
       {
-        key: "s",
-        name: "Symbol",
+        key: "r",
+        name: "Rename",
         type: "command",
         command: "editor.action.rename",
         when: "editorHasRenameProvider && editorTextFocus && !editorReadonly",
-      },
-      {
-        key: "p",
-        name: "Project",
-        type: "command",
-        command: "workbench.action.replaceInFiles",
       },
     ],
   },

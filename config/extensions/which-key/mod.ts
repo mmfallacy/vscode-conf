@@ -7,7 +7,7 @@ import { Misc } from "./misc.ts";
 import { Open } from "./open.ts";
 import { LSP } from "./lsp.ts";
 import { Peek } from "./peek.ts";
-import { Search } from "./search.ts";
+import { Find } from "./find.ts";
 import { Show } from "./show.ts";
 import { UI } from "./ui.ts";
 import { Window } from "./window.ts";
@@ -22,7 +22,7 @@ const Entries = [
   ...Misc,
   //   ...Open,
   ...Peek,
-  //   ...Search,
+  ...Find,
   //   ...Show,
   //   ...UI,
   ...Window,
