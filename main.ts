@@ -4,12 +4,11 @@ import { Files } from "./config/files/mod.ts";
 import { Misc } from "./config/misc.ts";
 import { UI } from "./config/ui.ts";
 
-import { Custom } from "./config/keybinds/custom.ts";
-import { Neovim } from "./config/keybinds/neovim.ts";
 import {
   Config as ExtensionsConfig,
   Packages,
 } from "./config/extensions/mod.ts";
+import { Keybinds } from "./config/keybinds/mod.ts";
 
 export const Settings = {
   ...APC,
@@ -20,6 +19,6 @@ export const Settings = {
   ...ExtensionsConfig,
 };
 
-export const Keybinds = [...Custom, ...Neovim];
+export { Keybinds };
 
 export const Extensions = Packages;
