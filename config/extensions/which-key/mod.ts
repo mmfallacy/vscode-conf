@@ -14,19 +14,19 @@ import { UI } from "./ui.ts";
 import { Window } from "./window.ts";
 
 const Entries = [
-  ...Bookmark,
+  //   ...Bookmark,
   ...Buffers,
-  ...Debug,
-  ...Git,
-  ...Insert,
-  ...LSP,
-  ...Misc,
-  ...Open,
-  ...Peek,
-  ...Search,
-  ...Show,
-  ...Terminal,
-  ...UI,
+  //   ...Debug,
+  //   ...Git,
+  //   ...Insert,
+  //   ...LSP,
+  //   ...Misc,
+  //   ...Open,
+  //   ...Peek,
+  //   ...Search,
+  //   ...Show,
+  //   ...Terminal,
+  //   ...UI,
   ...Window,
 ];
 
@@ -34,4 +34,5 @@ export const WhichKey = {
   "whichkey.sortOrder": "alphabetically",
   "whichkey.delay": 0,
   "whichkey.bindings": Entries,
+  "whichkey.showButtons": false,
 };
