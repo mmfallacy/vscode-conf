@@ -9,7 +9,6 @@ import { LSP } from "./lsp.ts";
 import { Peek } from "./peek.ts";
 import { Search } from "./search.ts";
 import { Show } from "./show.ts";
-import { Terminal } from "./terminal.ts";
 import { UI } from "./ui.ts";
 import { Window } from "./window.ts";
 
@@ -25,7 +24,6 @@ const Entries = [
   ...Peek,
   //   ...Search,
   //   ...Show,
-  //   ...Terminal,
   //   ...UI,
   ...Window,
 ];

@@ -36,4 +36,10 @@ export const Misc = [
     type: "command",
     command: "workbench.action.toggleZenMode",
   },
+  {
+    key: "t",
+    name: "Toggle Terminal",
+    type: "command",
+    command: "workbench.action.terminal.toggleTerminal",
+  },
 ];
