@@ -18,13 +18,6 @@ export const Misc = [
     command: "workbench.action.showCommands",
   },
   {
-    key: "/",
-    name: "comment",
-    type: "command",
-    command: "vscode-neovim.send",
-    args: "<C-/>",
-  },
-  {
     key: "?",
     name: "View All References",
     type: "command",
@@ -36,13 +29,6 @@ export const Misc = [
     name: "Minimap",
     type: "command",
     command: "editor.action.toggleMinimap",
-  },
-  {
-    key: "n",
-    name: "No Highlight",
-    type: "command",
-    command: "vscode-neovim.send",
-    args: ":noh<CR>",
   },
   {
     key: "z",

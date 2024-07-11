@@ -20,7 +20,7 @@ const Entries = [
   //   ...Git,
   //   ...Insert,
   //   ...LSP,
-  //   ...Misc,
+  ...Misc,
   //   ...Open,
   //   ...Peek,
   //   ...Search,
