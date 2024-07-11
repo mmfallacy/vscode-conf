@@ -22,7 +22,7 @@ const Entries = [
   //   ...LSP,
   ...Misc,
   //   ...Open,
-  //   ...Peek,
+  ...Peek,
   //   ...Search,
   //   ...Show,
   //   ...Terminal,
