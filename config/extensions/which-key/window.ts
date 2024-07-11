@@ -5,7 +5,7 @@ export const Window = [
     type: "bindings",
     bindings: [
       {
-        key: "W",
+        key: "w",
         name: "Focus previous editor group",
         type: "command",
         command: "workbench.action.focusPreviousGroup",
@@ -35,12 +35,6 @@ export const Window = [
         command: "workbench.action.moveActiveEditorGroupRight",
       },
       {
-        key: "t",
-        name: "Toggle editor group sizes",
-        type: "command",
-        command: "workbench.action.toggleEditorWidths",
-      },
-      {
         key: "m",
         name: "Maximize editor group",
         type: "command",
@@ -51,6 +45,37 @@ export const Window = [
         name: "Maximize editor group and hide side bar",
         type: "command",
         command: "workbench.action.maximizeEditor",
+      },
+      {
+        key: "r",
+        name: "Resize active editor group",
+        type: "command",
+        command: "whichkey.showTransient",
+        args: {
+          title: "Resize active editor group",
+          bindings: [
+            {
+              key: "h",
+              name: "Decrease width",
+              command: "workbench.action.decreaseViewWidth",
+            },
+            {
+              key: "j",
+              name: "Increase height",
+              command: "workbench.action.increaseViewHeight",
+            },
+            {
+              key: "k",
+              name: "Decrease height",
+              command: "workbench.action.decreaseViewHeight",
+            },
+            {
+              key: "l",
+              name: "Increase width",
+              command: "workbench.action.increaseViewWidth",
+            },
+          ],
+        },
       },
       {
         key: "=",
