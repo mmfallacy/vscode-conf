@@ -4,7 +4,7 @@ import { Env } from "../env.ts";
 const TARGET = Env.VSCODE_PROFILE_DIR;
 const BUILD_DIRECTORY = path.join(Deno.cwd(), "build");
 
-try {
+export async function inject() {
   await Deno.copyFile(
     path.join(BUILD_DIRECTORY, "settings.json"),
     path.join(TARGET, "settings.json")
@@ -13,7 +13,10 @@ try {
     path.join(BUILD_DIRECTORY, "keybindings.json"),
     path.join(TARGET, "keybindings.json")
   );
-  console.log(`Successfully injected to ${TARGET}`);
-} catch (err) {
-  console.error(err);
+
+  console.log(`Successfully injected to Env.VSCODE_PROFILE_DIR`);
+}
+
+if (import.meta.main) {
+  inject().catch(console.error);
 }
