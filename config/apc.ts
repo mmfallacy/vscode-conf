@@ -1,26 +1,26 @@
-const APC: Record<string, unknown> = {};
+const apc: Record<string, unknown> = {};
 
-APC.activityBar = {
+apc.activityBar = {
   position: "bottom",
   hideSettings: true,
   size: 28,
 };
-APC.electron = {
+apc.electron = {
   titleBarStyle: "hiddenInset",
   trafficLightPosition: {
     x: 12,
     y: 10,
   },
 };
-APC["font.family"] = "Geist Mono";
-APC["monospace.font.family"] = "Geist Mono";
-APC.statusBar = {
+apc["font.family"] = "Geist Mono";
+apc["monospace.font.family"] = "Geist Mono";
+apc.statusBar = {
   position: "editor-bottom",
   height: 28,
   fontSize: 12,
 };
 
-APC.stylesheet = {
+apc.stylesheet = {
   ".sidebar > .composite": "height: 12px !important",
   ".title-label": "display: none !important",
   ".title-actions": "display: none !important",
@@ -31,4 +31,4 @@ APC.stylesheet = {
   ".split-view-view .visible": "background-color: #110f17 !important",
 };
 
-export { APC };
+export const APC = { apc };
