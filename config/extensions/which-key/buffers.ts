@@ -46,18 +46,7 @@ export const Buffers = [
         type: "command",
         command: "workbench.action.closeOtherEditors",
       },
-      {
-        key: "n",
-        name: "Next editor",
-        type: "command",
-        command: "workbench.action.nextEditor",
-      },
-      {
-        key: "p",
-        name: "Previous editor",
-        type: "command",
-        command: "workbench.action.previousEditor",
-      },
+
       {
         key: "N",
         name: "New untitled editor",
@@ -93,5 +82,17 @@ export const Buffers = [
     name: "Split Vertical",
     type: "command",
     command: "workbench.action.splitEditor",
+  },
+  {
+    key: "]",
+    name: "Next editor",
+    type: "command",
+    command: "workbench.action.nextEditor",
+  },
+  {
+    key: "[",
+    name: "Previous editor",
+    type: "command",
+    command: "workbench.action.previousEditor",
   },
 ];
