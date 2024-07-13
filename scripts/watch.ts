@@ -1,9 +1,9 @@
 import { build } from "./build.ts";
-import { inject } from "./inject.ts";
+import { copy } from "./copy.ts";
 
 export async function watch() {
   await build();
-  await inject();
+  await copy();
 }
 
 if (import.meta.main) {

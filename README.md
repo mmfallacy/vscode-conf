@@ -29,12 +29,12 @@ The repo currently splits VSCode JSON configurations into a few categories
 ### `deno task build`
 This Deno task merges the separate setting and keybind entries to form `settings.json` and `keybindings.json`.
 
-### `deno task inject`
+### `deno task copy`
 This Deno task copies the built `settings.json` and `keybindings.json` to the specified `VSCODE_PROFILE_DIR` directory
 
 ### `deno task install-ext`
 This Deno task uses the `VSCODE_BINARY` executable to install the exported package list in `config/extensions/mod.ts`.
 
 ### `deno task stow`
-Similar to `deno task inject`, this places the built `settings.json` and `keybindings.json` to `VSCODE_PROFILE_DIR` directory but as a symlink
+Similar to `deno task copy`, this places the built `settings.json` and `keybindings.json` to `VSCODE_PROFILE_DIR` directory but as a symlink
 > *Requires elevated shell permissions in Windows.*

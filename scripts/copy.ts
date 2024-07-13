@@ -4,7 +4,7 @@ import { Env } from "../env.ts";
 const TARGET = Env.VSCODE_PROFILE_DIR;
 const BUILD_DIRECTORY = path.join(Deno.cwd(), "build");
 
-export async function inject() {
+export async function copy() {
   await Deno.copyFile(
     path.join(BUILD_DIRECTORY, "settings.json"),
     path.join(TARGET, "settings.json")
@@ -18,5 +18,5 @@ export async function inject() {
 }
 
 if (import.meta.main) {
-  inject().catch(console.error);
+  copy().catch(console.error);
 }
