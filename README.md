@@ -38,3 +38,7 @@ This Deno task uses the `VSCODE_BINARY` executable to install the exported packa
 ### `deno task stow`
 Similar to `deno task copy`, this places the built `settings.json` and `keybindings.json` to `VSCODE_PROFILE_DIR` directory but as a symlink
 > *Requires elevated shell permissions in Windows.*
+
+### `deno task inject`
+This Deno task injects the specified UI states defined in `config/uiState/mod.ts` into `VSCODE_PROFILE_DIR\globalStorage\state.vscdb` which VSCode uses to store its UI states.
+> This uses [`denodrivers/sqlite3`](https://github.com/denodrivers/sqlite3) which requires additional permissions `--allow-net` and `--allow-write` on first launch. See [`denodrivers/sqlite3` docs](https://github.com/denodrivers/sqlite3) for more information.
