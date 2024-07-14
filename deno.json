@@ -1,14 +1,18 @@
 {
-    "tasks": {
-        "build": "deno run --allow-write --allow-read scripts/build.ts",
-        "copy": "deno run --allow-write --allow-read --allow-env scripts/inject.ts",
-        "dev": "deno run --allow-read --watch main.ts",
-        "install-ext": "deno run --allow-run --allow-read --allow-env scripts/install-ext.ts",
-        "stow": "deno run --allow-write --allow-read --allow-env scripts/stow.ts",
-        "watch": "deno run --allow-write --allow-read --allow-env --watch scripts/watch.ts"
-    },
-    "imports": {
-        "path": "jsr:@std/path",
-        "dotenv": "jsr:@std/dotenv"
-    }
+  "tasks": {
+    "build": "deno run --allow-write --allow-read scripts/build.ts",
+    "copy": "deno run --allow-write --allow-read --allow-env scripts/inject.ts",
+    "dev": "deno run --allow-read --watch main.ts",
+    "inject": "deno run --allow-env --allow-read --allow-ffi --unstable-ffi scripts/inject.ts",
+    "install-ext": "deno run --allow-run --allow-read --allow-env scripts/install-ext.ts",
+    "stow": "deno run --allow-write --allow-read --allow-env scripts/stow.ts",
+    "watch": "deno run --allow-write --allow-read --allow-env --watch scripts/watch.ts"
+  },
+  "imports": {
+    "@valibot/valibot": "jsr:@valibot/valibot@^0.36.0",
+    "assert": "jsr:@std/assert",
+    "dotenv": "jsr:@std/dotenv",
+    "path": "jsr:@std/path",
+    "sqlite3": "jsr:@db/sqlite@0.11"
+  }
 }
