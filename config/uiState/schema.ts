@@ -1,6 +1,7 @@
 import {
   array,
   boolean,
+  InferInput,
   number,
   object,
   optional,
@@ -8,7 +9,7 @@ import {
   picklist,
 } from "@valibot/valibot";
 
-const ViewletSchema = object({
+export const ViewletSchema = object({
   id: picklist([
     "workbench.view.explorer",
     "workbench.view.search",
@@ -27,6 +28,7 @@ const ViewletSchema = object({
   pinned: boolean(),
   visible: boolean(),
 });
+export type Viewlet = InferInput<typeof ViewletSchema>;
 
 const PanelSchema = object({
   id: picklist([
@@ -42,6 +44,7 @@ const PanelSchema = object({
   pinned: boolean(),
   visible: boolean(),
 });
+export type Panel = InferInput<typeof PanelSchema>;
 
 const ViewTitleHideableSchema = picklist([
   "workbench.output.menu.switchOutput",
@@ -56,6 +59,7 @@ const ViewTitleHideableSchema = picklist([
   "workbench.actions.table.workbench.panel.markers.view.viewAsTable",
   "workbench.actions.treeView.workbench.panel.markers.view.collapseAll",
 ]);
+export type ViewTitleHideable = InferInput<typeof ViewTitleHideableSchema>;
 
 const ExplorerHideableSchema = object({
   id: picklist([
@@ -71,11 +75,15 @@ const ExplorerHideableSchema = object({
   ]),
   isHidden: boolean(),
 });
+export type ExplorerHideable = InferInput<typeof ExplorerHideableSchema>;
 
 const SourceControlHideableSchema = object({
   id: picklist(["workbench.scm.repositories", "workbench.scm"]),
   isHidden: boolean(),
 });
+export type SourceControlHideable = InferInput<
+  typeof SourceControlHideableSchema
+>;
 
 export const SupportedGlobalStatesSchema = partial(
   object({
@@ -113,3 +121,6 @@ export const SupportedGlobalStatesSchema = partial(
     "workbench.scm.views.state.hidden": array(SourceControlHideableSchema),
   })
 );
+export type SupportedGlobalStates = InferInput<
+  typeof SupportedGlobalStatesSchema
+>;
